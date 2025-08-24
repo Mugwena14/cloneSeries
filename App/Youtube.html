@@ -1,1 +1,218 @@
-git remote add origin https://github.com/Mugwena14/cloneSeries.git
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YouTube – Landing Clone (HTML & CSS only)</title>
+</head>
+<body>
+  <div class="app">
+    <!-- Top Bar -->
+    <header class="topbar" aria-label="Top Bar">
+      <!-- Left: Menu + Logo -->
+      <button class="btn round" aria-label="Menu">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"/></svg>
+      </button>
+      <div class="yt-logo" aria-label="YouTube Home">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#ff0033" d="M23.5 6.2a4 4 0 0 0-2.8-2.8C18.9 3 12 3 12 3s-6.9 0-8.7.4A4 4 0 0 0 .5 6.2 41 41 0 0 0 0 12a41 41 0 0 0 .5 5.8 4 4 0 0 0 2.8 2.8C5.1 21 12 21 12 21s6.9 0 8.7-.4a4 4 0 0 0 2.8-2.8 41 41 0 0 0 .5-5.8 41 41 0 0 0-.5-5.8Z"/><path fill="#fff" d="M9.75 8.25v7.5L16.5 12l-6.75-3.75Z"/></svg>
+        <span>YouTube</span>
+      </div>
+
+      <!-- Center: Search -->
+      <div class="search" role="search">
+        <div class="field">
+          <input aria-label="Search" type="search" placeholder="Search" />
+        </div>
+        <button class="btn search-btn" aria-label="Search">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M15.5 14h-.8l-.3-.3a6.5 6.5 0 1 0-.9.9l.3.3v.8L20 21l1-1-5.5-6Zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14Z"/></svg>
+        </button>
+        <button class="btn round" aria-label="Voice search">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 14a3 3 0 0 0 3-3V7a3 3 0 1 0-6 0v4a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V20H9v2h6v-2h-2v-2.08A7 7 0 0 0 19 11h-2Z"/></svg>
+        </button>
+      </div>
+
+      <!-- Right: Actions -->
+      <div class="actions">
+        <button class="btn round" aria-label="Create">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <button class="btn round" aria-label="Notifications">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 22a2 2 0 0 0 2-2H10a2 2 0 0 0 2 2Zm6-6v-5a6 6 0 1 0-12 0v5L4 18v1h16v-1l-2-2Z"/></svg>
+        </button>
+        <span class="avatar" aria-label="User"></span>
+      </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" aria-label="Sidebar Navigation">
+      <div class="nav-group">
+        <div class="nav-item">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+          <span>Home</span>
+        </div>
+        <div class="nav-item">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M10 16v-5l5 2.5-5 2.5zm-8-9h20v2H2V7zm0 4h20v2H2v-2zm0 4h14v2H2v-2z"/></svg>
+          <span>Shorts</span>
+        </div>
+        <div class="nav-item">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M10 8l6 4-6 4V8zm11-5H3a2 2 0 0 0-2 2v14l4-4h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2z"/></svg>
+          <span>Subscriptions</span>
+        </div>
+      </div>
+      <div class="nav-group">
+        <div class="nav-item">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M10 8l6 4-6 4V8zm-8 9h20v2H2v-2z"/></svg>
+          <span>Library</span>
+        </div>
+        <div class="nav-item">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm7-5H5v2h14V3z"/></svg>
+          <span>History</span>
+        </div>
+        <div class="nav-item">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M21 6h-3V3h-2v3h-3v2h3v3h2V8h3zM3 5h9v2H3V5zm0 4h9v2H3V9zm0 4h6v2H3v-2z"/></svg>
+          <span>Playlists</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main>
+      <div class="chips" role="tablist" aria-label="Filters">
+        <button class="chip active">All</button>
+        <button class="chip">Music</button>
+        <button class="chip">Gaming</button>
+        <button class="chip">Live</button>
+        <button class="chip">News</button>
+        <button class="chip">JavaScript</button>
+        <button class="chip">Trailers</button>
+        <button class="chip">Podcasts</button>
+      </div>
+
+      <section class="grid" aria-label="Video feed">
+        <!-- Repeatable card template -->
+        
+        <!-- Card 1 -->
+        <article class="card" aria-label="Video">
+          <a class="thumb" href="#" aria-label="Open video">
+            <img alt="Video thumbnail" src="https://picsum.photos/seed/yt1/640/360" />
+            <span class="badge">12:34</span>
+          </a>
+          <div class="meta">
+            <span class="ch-avatar" style="background: url('https://i.pravatar.cc/72?img=3') center/cover"></span>
+            <div>
+              <div class="title">Building a YouTube Clone with Only HTML & CSS</div>
+              <div class="channel">CodeCraft • <span class="stats">1.2M views • 2 weeks ago</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card" aria-label="Video">
+          <a class="thumb" href="#">
+            <img alt="Video thumbnail" src="https://picsum.photos/seed/yt2/640/360" />
+            <span class="badge">8:20</span>
+          </a>
+          <div class="meta">
+            <span class="ch-avatar" style="background: url('https://i.pravatar.cc/72?img=5') center/cover"></span>
+            <div>
+              <div class="title">Top 10 CSS Grid Layout Patterns to Know</div>
+              <div class="channel">Layout Lab • <span class="stats">438K views • 1 month ago</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card" aria-label="Video">
+          <a class="thumb" href="#">
+            <img alt="Video thumbnail" src="https://picsum.photos/seed/yt3/640/360" />
+            <span class="badge">22:05</span>
+          </a>
+          <div class="meta">
+            <span class="ch-avatar" style="background: url('https://i.pravatar.cc/72?img=8') center/cover"></span>
+            <div>
+              <div class="title">Responsive Design Crash Course (No Frameworks)</div>
+              <div class="channel">DevDesk • <span class="stats">987K views • 3 days ago</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card" aria-label="Video">
+          <a class="thumb" href="#">
+            <img alt="Video thumbnail" src="https://picsum.photos/seed/yt4/640/360" />
+            <span class="badge">16:48</span>
+          </a>
+          <div class="meta">
+            <span class="ch-avatar" style="background: url('https://i.pravatar.cc/72?img=12') center/cover"></span>
+            <div>
+              <div class="title">Designing Dark Themes That Shine</div>
+              <div class="channel">PixelPilot • <span class="stats">205K views • 5 days ago</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="card" aria-label="Video">
+          <a class="thumb" href="#">
+            <img alt="Video thumbnail" src="https://picsum.photos/seed/yt5/640/360" />
+            <span class="badge">11:59</span>
+          </a>
+          <div class="meta">
+            <span class="ch-avatar" style="background: url('https://i.pravatar.cc/72?img=15') center/cover"></span>
+            <div>
+              <div class="title">CSS Flexbox: From Zero to Hero</div>
+              <div class="channel">FlexWorks • <span class="stats">1.8M views • 1 year ago</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="card" aria-label="Video">
+          <a class="thumb" href="#">
+            <img alt="Video thumbnail" src="https://picsum.photos/seed/yt6/640/360" />
+            <span class="badge">3:07</span>
+          </a>
+          <div class="meta">
+            <span class="ch-avatar" style="background: url('https://i.pravatar.cc/72?img=20') center/cover"></span>
+            <div>
+              <div class="title">Neumorphism vs. Skeuomorphism: UI Style Showdown</div>
+              <div class="channel">UI Arena • <span class="stats">74K views • 4 months ago</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="card" aria-label="Video">
+          <a class="thumb" href="#">
+            <img alt="Video thumbnail" src="https://picsum.photos/seed/yt7/640/360" />
+            <span class="badge">9:41</span>
+          </a>
+          <div class="meta">
+            <span class="ch-avatar" style="background: url('https://i.pravatar.cc/72?img=33') center/cover"></span>
+            <div>
+              <div class="title">Grid vs. Flexbox: When to Use Which?</div>
+              <div class="channel">CSS Clinic • <span class="stats">322K views • 2 weeks ago</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 8 -->
+        <article class="card" aria-label="Video">
+          <a class="thumb" href="#">
+            <img alt="Video thumbnail" src="https://picsum.photos/seed/yt8/640/360" />
+            <span class="badge">14:10</span>
+          </a>
+          <div class="meta">
+            <span class="ch-avatar" style="background: url('https://i.pravatar.cc/72?img=40') center/cover"></span>
+            <div>
+              <div class="title">Create a Pixel-Perfect Navbar inspired by YouTube</div>
+              <div class="channel">HeaderHub • <span class="stats">58K views • 6 days ago</span></div>
+            </div>
+          </div>
+        </article>
+
+      </section>
+    </main>
+  </div>
+</body>
+</html>
